@@ -53,3 +53,43 @@ body {
 .intro p {
     line-height: 2;
 }
+
+/*************************** CARD ***************************/
+
+.card {
+    display: block; /* Turns the link into a box */
+
+    color: black;
+    text-decoration: none;
+}
+.card-image {
+    height: 500px;
+    overflow: hidden; /* Hides the excess content */
+}
+.card img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition-property: transform; /* only trasform will animate */
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.card h2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    font-size: 1.5em; /* 1.2x is the default font size but due to this text it must be bigger to understand */
+}
+
+/* Change the image when we hover over the link */
+.card:hover img {
+
+transform: scale(1.2);
+
+transition-duration: 10s;
+transition-timing-function: linear;
+}
