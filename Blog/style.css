@@ -23,6 +23,8 @@ body {
     background-attachment: fixed;
 
     width: 100vw; /* vh - Viewport Width */
+    width: auto;
+
     height: 100vh; /* vh - Viewport Height */
 
     display: flex;
@@ -93,3 +95,60 @@ transform: scale(1.2);
 transition-duration: 10s;
 transition-timing-function: linear;
 }
+
+/*************************** CONTAINER ***************************/
+.container {
+    max-width: 1280px;
+
+    margin: auto;
+}
+
+/*************************** GRID LAYOUT ***************************/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.two-colums .card {
+width: calc((100% - 50px) / 2);
+}
+
+.three-colums .card {
+    width: calc((100% - 100px) / 3);
+    }
+
+/*************************** MAIN CONTENT ***************************/
+.main-content {
+    margin-top: 100px;
+}
+
+.vertical-title {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+transform-origin: 0 0;  /* rotate from the top left */
+transform : rotate(90deg) translateY(5px);
+
+position: absolute;
+}
+
+/*************************** FOOTER ***************************/
+
+.footer {
+font-size: 0.4em;
+
+background-color: rgba(221, 221, 221, 0.5);
+    color:#000000;
+
+    padding: 20px;
+    
+}
+
+.footer-left {
+    text-align: left;
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
