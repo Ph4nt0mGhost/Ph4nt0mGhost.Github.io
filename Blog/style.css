@@ -28,6 +28,9 @@ body {
     height: 100vh; /* vh - Viewport Height */
 
     display: flex;
+
+    position: relative;
+z-index: 100;
 }
 
 .intro-container {
@@ -136,19 +139,97 @@ position: absolute;
 
 /*************************** FOOTER ***************************/
 
-.footer {
-font-size: 0.4em;
+.website-footer {
 
 background-color: rgba(221, 221, 221, 0.5);
-    color:#000000;
 
-    padding: 20px;
+    padding: 50px;
     
 }
 
-.footer-left {
-    text-align: left;
-    width: 25%;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
+.website-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.website-footer .summary {
+    width: 33%;
+}
+
+.footer-links {
+list-style: none;
+
+margin-left: auto;
+
+columns: 2;
+gap: 50px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+}
+
+.website-footer .copyright {
+    width: 100%;
+
+    margin-top: 50px;
+
+    text-align: right;
+}
+
+/*************************** NAVIGATION ***************************/
+
+.navbar {
+    border-color: azure;
+    background-color: #fafafa;
+    border-style: solid;
+    /* cancels out off borders */
+    border-width: 0;
+    border-bottom-width: 1px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-brand {
+    font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
+    /* scales the font by 150% of the orginal size */
+    font-size: 1.5em;
+
+    align-content: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    margin-top: 10px;
+
+}
+.navbar-nav .nav-link {
+    /* this means top/bottom left/right */
+    padding: 30px 20px;
+}
