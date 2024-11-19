@@ -15,6 +15,15 @@ body {
     min-height: 200vh;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+
+  /* !important makes it difficult to change specific css comands later */
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+
+}
 /*************************** INTRO SCREEN ***************************/
 .intro {
     background-image: url(images/leaves.jpg);
@@ -33,6 +42,11 @@ body {
 z-index: 100;
 }
 
+.intro-narrow {
+    height: 75vh;
+    z-index: 900;
+}
+ 
 .intro-container {
     background-color: rgba(0, 0, 0, 0.5);
     color:#fafafa;
@@ -113,6 +127,11 @@ transition-timing-function: linear;
     gap: 50px;
 }
 
+.one-column .card {
+    width: 100%;
+
+}
+
 .two-colums .card {
 width: calc((100% - 50px) / 2);
 }
@@ -124,6 +143,14 @@ width: calc((100% - 50px) / 2);
 /*************************** MAIN CONTENT ***************************/
 .main-content {
     margin-top: 100px;
+}
+
+.content-narrow {
+    width: 50%;
+    min-width: 640px;
+    /* Centers things horizontally*/
+    margin: auto;
+
 }
 
 .vertical-title {
@@ -232,4 +259,29 @@ gap: 50px;
 .navbar-nav .nav-link {
     /* this means top/bottom left/right */
     padding: 30px 20px;
+}
+
+/*************************** STORY ***************************/
+
+.story-header h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.story-header p {
+    font-size: 1.5em;
+    font-family: 'Special Elite', Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.story-header .byline {
+    margin-top: 10px;
+}
+
+/* Targets Everything inside class="byline" */
+.story-header .byline * {
+    display: inline;
+    font-style: none;
+
 }
