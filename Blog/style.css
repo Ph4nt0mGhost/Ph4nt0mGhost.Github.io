@@ -140,6 +140,10 @@ width: calc((100% - 50px) / 2);
     width: calc((100% - 100px) / 3);
     }
 
+    .four-column .card {
+        width: calc((100% - 150px) / 4);
+        }
+
 /*************************** MAIN CONTENT ***************************/
 .main-content {
     margin-top: 100px;
@@ -284,4 +288,53 @@ gap: 50px;
     display: inline;
     font-style: none;
 
+}
+
+/* A comma helps apply the same css TO DIFFERENT ELEMENTS*/
+.story-content p, .story-content .row {
+    margin-bottom: 50px
+  }
+
+  .story-footer p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+ 
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+ 
+.social-icon {
+    background-color: #aaaaaa;
+ 
+display: block;
+ 
+    padding: 10px;
+    margin: 10px;
+ 
+    transition-property: background-color;
+    transition-duration: 0.15s;
+}
+ 
+
+  .social-icon svg {
+    display: block;
+
+    font-size: 24px;
+
+    width: 1em;
+    height: 1em;
+    
+    transition-property: fill;
+transition-duration: 0.15s;
+
+}
+.social-hover svg {
+    fill: #f4f4f4;
+}
+
+.keep-reading {
+    background-color: #f4f4f4;
+    padding-top: 50px;
 }
